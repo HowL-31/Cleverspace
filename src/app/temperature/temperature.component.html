@@ -1,0 +1,29 @@
+
+<div class=" container p-2 mt-3">
+    <form [formGroup]="CityForm" (ngSubmit)="onSubmit()">
+        <div class="mb-2">
+            <div class="row">
+                <div class="col-lg-3">
+                    <label for="exampleInputEmail1" class="form-label">City: </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <input type="text" class="form-control" id="city" formControlName="cityName">
+                </div>
+                <div class="col-lg-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+      </form>
+</div>
+<div class="container alert alert-success box-msg" *ngIf='show'>
+    <label>Please Wait....</label>
+</div>
+<div class="container alert alert-info box-msg" *ngIf='div'>
+    <h4 class="text-danger">Presenting to you the temperature graph  .....</h4>
+</div>
+<div class="container" id="image_div" style="margin-top: -50px;">
+    <img style="display: block;" [src]="url" class="rounded float-start mb-5" id="img">
+</div>
