@@ -1,0 +1,4 @@
+web: gunicorn cleverspace_api.wsgi
+release: python manage.py makemigrations --noinput
+release: python manage.py collectstaic --noinput
+release: python manage.py migrate --noinput
