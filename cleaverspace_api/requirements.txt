@@ -36,4 +36,4 @@ tzdata==2021.5
 urllib3==1.26.7
 whitenoise==5.3.0
 winkerberos==0.8.0
-python-magic-bin==0.4.14
+git+https://github.com/julian-r/python-magic.git#egg=python-magic-bin
